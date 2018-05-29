@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<CALayerDelegate>
 
 @end
 
@@ -16,8 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self creatView];
     [self creatImage];
+    
+    [self creatCustomView];
+    [self creatCustomImage];
 }
 
 /** 用 CALayer 代替 UIView */
@@ -37,10 +41,34 @@
     [self.view.layer addSublayer:layer];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/** 给 CALayer 设置代理并绘制 */
+- (void)creatCustomView {
+    CALayer *layer = [[CALayer alloc] init];
+    layer.frame = CGRectMake(100, 300, 50, 50);
+    // 设置代理
+    layer.delegate = self;
+    layer.backgroundColor = [UIColor blackColor].CGColor;
+    [self.view.layer addSublayer:layer];
+    [layer display];
 }
 
+/** CALayer 设置图片显示区域 */
+- (void)creatCustomImage {
+    CALayer *layer = [[CALayer alloc] init];
+    layer.frame = CGRectMake(100, 400, 50, 50);
+    UIImage *image = [UIImage imageNamed:@"header"];
+    layer.contents = CFBridgingRelease(image.CGImage);
+    // contentsRect: 显示图片的部分区域, 默认值(0, 0, 1, 1)
+    layer.contentsRect = CGRectMake(0.2, 0.2, 0.7, 0.7);
+    [self.view.layer addSublayer:layer];
+}
+
+#pragma mark - 代理区域
+/** 代理 - CALayerDelegate*/
+- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
+    CGContextSetLineWidth(ctx, 5.0f);
+    CGContextSetStrokeColorWithColor(ctx, [UIColor yellowColor].CGColor);
+    CGContextStrokeEllipseInRect(ctx, layer.bounds);
+}
 
 @end
