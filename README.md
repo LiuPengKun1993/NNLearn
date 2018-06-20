@@ -14,4 +14,4 @@
 
 #### [4. NNObserver](https://github.com/liuzhongning/NNLearn/tree/master/NNObserver)
 
-练习观察者模式中的 `NSNotificationCenter` 与 `KVO`, 对比两者之间的区别;
+练习观察者模式中的 `NSNotificationCenter` 与 `KVO`, 对比两者之间的区别与联系;
