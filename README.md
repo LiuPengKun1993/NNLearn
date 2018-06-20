@@ -12,3 +12,6 @@
 
 `NSSortDescriptor` 排序, 很方便, 它可以设定关键字( 字典中的 `key` ), 根据对应 `key` 的 `value` 来进行排序; 另外 `NSSet` 可以过滤数组中重复的数据;
 
+#### [4. NNObserver](https://github.com/liuzhongning/NNLearn/tree/master/NNObserver)
+
+练习观察者模式中的 `NSNotificationCenter` 与 `KVO`, 对比两者之间的区别;
