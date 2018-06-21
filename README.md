@@ -15,3 +15,8 @@
 #### [4. NNObserver](https://github.com/liuzhongning/NNLearn/tree/master/NNObserver)
 
 练习观察者模式中的 `NSNotificationCenter` 与 `KVO`, 对比两者之间的区别与联系;
+
+
+#### [5. NNRuntimeTest](https://github.com/liuzhongning/NNLearn/tree/master/NNRuntimeTest)
+
+练习 `runtime` 常用的几种方法, 详细读了这篇文章[runtime详解](http://gcblog.github.io/2016/04/16/runtime详解/#more);
