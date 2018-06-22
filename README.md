@@ -19,4 +19,4 @@
 
 #### [5. NNRuntimeTest](https://github.com/liuzhongning/NNLearn/tree/master/NNRuntimeTest)
 
-练习 `runtime` 常用的几种方法, 详细读了这篇文章[runtime详解](http://gcblog.github.io/2016/04/16/runtime详解/#more);
+练习 `runtime` 常用的几种方法, 详细读了这篇文章 [runtime详解](http://gcblog.github.io/2016/04/16/runtime详解/#more), 详情请见 [NNRuntimeTest](https://github.com/liuzhongning/NNLearn/tree/master/NNRuntimeTest);
