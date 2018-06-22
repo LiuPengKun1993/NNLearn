@@ -14,7 +14,7 @@
 
 /** 通用标签 **/
 @property (nonatomic, strong) UILabel *testLabel;
-
+/** 按钮的数组元素 **/
 @property (nonatomic, copy) NSArray *buttonTitleArray;
 
 @end

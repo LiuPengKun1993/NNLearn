@@ -29,6 +29,8 @@
 		E3F5E7CB20DB80DA00C790C9 /* NSObject+NNAddAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F5E7CA20DB80DA00C790C9 /* NSObject+NNAddAttribute.m */; };
 		E3F5E7CE20DB976300C790C9 /* NNLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F5E7CD20DB976300C790C9 /* NNLibrary.m */; };
 		E3F5E7D220DB9D8C00C790C9 /* NNCountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F5E7D120DB9D8C00C790C9 /* NNCountButton.m */; };
+		E3F5E7D520DCC2AE00C790C9 /* NNCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F5E7D420DCC2AE00C790C9 /* NNCoding.m */; };
+		E3F5E7D820DCCE1A00C790C9 /* NSObject+NNKeyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F5E7D720DCCE1A00C790C9 /* NSObject+NNKeyValues.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,10 @@
 		E3F5E7CD20DB976300C790C9 /* NNLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNLibrary.m; sourceTree = "<group>"; };
 		E3F5E7D020DB9D8C00C790C9 /* NNCountButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNCountButton.h; sourceTree = "<group>"; };
 		E3F5E7D120DB9D8C00C790C9 /* NNCountButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCountButton.m; sourceTree = "<group>"; };
+		E3F5E7D320DCC2AE00C790C9 /* NNCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNCoding.h; sourceTree = "<group>"; };
+		E3F5E7D420DCC2AE00C790C9 /* NNCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCoding.m; sourceTree = "<group>"; };
+		E3F5E7D620DCCE1900C790C9 /* NSObject+NNKeyValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NNKeyValues.h"; sourceTree = "<group>"; };
+		E3F5E7D720DCCE1A00C790C9 /* NSObject+NNKeyValues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNKeyValues.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,8 @@
 				E3F5E7C720DB799500C790C9 /* NNPerson.m */,
 				E3F5E7CC20DB976300C790C9 /* NNLibrary.h */,
 				E3F5E7CD20DB976300C790C9 /* NNLibrary.m */,
+				E3F5E7D320DCC2AE00C790C9 /* NNCoding.h */,
+				E3F5E7D420DCC2AE00C790C9 /* NNCoding.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +211,8 @@
 			children = (
 				E3F5E7C920DB80DA00C790C9 /* NSObject+NNAddAttribute.h */,
 				E3F5E7CA20DB80DA00C790C9 /* NSObject+NNAddAttribute.m */,
+				E3F5E7D620DCCE1900C790C9 /* NSObject+NNKeyValues.h */,
+				E3F5E7D720DCCE1A00C790C9 /* NSObject+NNKeyValues.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -316,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F5E7D520DCC2AE00C790C9 /* NNCoding.m in Sources */,
 				E3F5E7CB20DB80DA00C790C9 /* NSObject+NNAddAttribute.m in Sources */,
 				E3F5E7BC20DB65A200C790C9 /* NNSeventhViewController.m in Sources */,
 				E3F5E7B020DB654500C790C9 /* NNThirdViewController.m in Sources */,
@@ -332,6 +343,7 @@
 				E3F5E78D20DB575700C790C9 /* main.m in Sources */,
 				E3F5E7BF20DB65D300C790C9 /* NNBaseViewController.m in Sources */,
 				E3F5E7A720DB57B200C790C9 /* NNHomeViewController.m in Sources */,
+				E3F5E7D820DCCE1A00C790C9 /* NSObject+NNKeyValues.m in Sources */,
 				E3F5E7A420DB579D00C790C9 /* NNHomeTableView.m in Sources */,
 				E3F5E77C20DB575500C790C9 /* AppDelegate.m in Sources */,
 			);

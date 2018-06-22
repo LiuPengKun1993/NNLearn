@@ -15,8 +15,6 @@
 @end
 
 
-
-
 @interface NNClickCount : NSObject
 
 + (instancetype)sharedInstance;

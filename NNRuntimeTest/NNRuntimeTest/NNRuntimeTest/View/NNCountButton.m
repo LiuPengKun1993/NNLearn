@@ -36,8 +36,6 @@
 @end
 
 
-
-
 @interface NNClickCount()
 
 @property (nonatomic, assign) NSInteger count;

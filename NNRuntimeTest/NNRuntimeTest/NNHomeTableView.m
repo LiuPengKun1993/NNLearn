@@ -24,7 +24,6 @@
     if (self) {
         self.delegate = self;
         self.dataSource = self;
-        
         self.tableFooterView = [[UIView alloc] init];
         self.showsVerticalScrollIndicator = NO;
         self.showsHorizontalScrollIndicator = NO;
@@ -56,14 +55,28 @@
 #pragma mark - 懒加载区域
 - (NSArray *)titleArray {
     if (!_titleArray) {
-        _titleArray = @[@"更改属性值", @"动态添加属性", @"动态添加方法", @"交换方法的实现", @"拦截并替换方法", @"在方法上增加额外功能", @"***************", @"***************"];
+        _titleArray = @[@"更改属性值",
+                        @"动态添加属性",
+                        @"动态添加方法",
+                        @"交换方法的实现",
+                        @"拦截并替换方法",
+                        @"在方法上增加额外功能",
+                        @"归档解档",
+                        @"字典转模型"];
     }
     return _titleArray;
 }
 
 - (NSArray *)controllerArray {
     if (!_controllerArray) {
-        _controllerArray = @[@"NNFirstViewController", @"NNSecondViewController", @"NNThirdViewController", @"NNFourthViewController", @"NNFifthViewController", @"NNSixthViewController", @"NNSeventhViewController", @"NNEighthViewController"];
+        _controllerArray = @[@"NNFirstViewController",
+                             @"NNSecondViewController",
+                             @"NNThirdViewController",
+                             @"NNFourthViewController",
+                             @"NNFifthViewController",
+                             @"NNSixthViewController",
+                             @"NNSeventhViewController",
+                             @"NNEighthViewController"];
     }
     return _controllerArray;
 }
