@@ -23,3 +23,7 @@
 
 #### [6. tips](https://github.com/liuzhongning/NNLearn/blob/master/tips.md)
 小冷易忘知识点汇总, 总结平时用到的一些小技巧;
+
+#### [7. NNAlgorithm]()
+
+各种算法练习;
