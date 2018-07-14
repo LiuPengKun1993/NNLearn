@@ -35,6 +35,10 @@
     // 青蛙变态跳台阶问题
     NSInteger jumpII = [algorithm jumpFloorII:4];
     NSLog(@"青蛙变态跳台阶问题: jumpII = %ld", jumpII);
+
+    // 求1+2+3+...+n
+    NSInteger solution = [algorithm sum_Solution:10];
+    NSLog(@"1+2+3+...+n: solution = %ld", solution);
 }
 
 

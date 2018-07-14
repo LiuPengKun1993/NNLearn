@@ -19,4 +19,7 @@
 /** 变态跳台阶问题 */
 - (NSInteger)jumpFloorII:(NSInteger)number;
 
+/** 求1+2+3+...+n */
+- (NSInteger)sum_Solution:(NSInteger)number;
+
 @end

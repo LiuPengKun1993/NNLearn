@@ -43,4 +43,10 @@
     return 2*[self jumpFloorII:(number-1)];
 }
 
+/** 求1+2+3+...+n */
+- (NSInteger)sum_Solution:(NSInteger)number {
+    number && (number += [self sum_Solution:(number-1)]);
+    return number;
+}
+
 @end

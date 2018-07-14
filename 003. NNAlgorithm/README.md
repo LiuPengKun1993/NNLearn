@@ -74,3 +74,19 @@
 }
 ```
 
+- 求1+2+3+...+n
+> 求1+2+3+...+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）
+
+题目要求不能使用乘除法、for、while、if、else、switch、case 等关键字及条件判断语句，那么首先就要思考怎么才能使 n 一次次的相加且到 0 的时候结束。首先递归可以实现每次 n-1 的相加，即类似于 n + f(n-1) 这样的。但是这样做的话递归的出口在哪呢，也就是我们不能使用条件语句来控制递归何时停止。
+仔细想想还有什么运算符可以达到条件控制的效果，这个时候 && 运算符就出现了
+
+```
+/** 求1+2+3+...+n */
+- (NSInteger)sum_Solution:(NSInteger)number {
+    number && (number += [self sum_Solution:(number-1)]);
+    return number;
+}
+```
+
+
+
