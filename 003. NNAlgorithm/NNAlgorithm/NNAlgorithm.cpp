@@ -9,5 +9,5 @@
 #include "NNAlgorithm.hpp"
 
 void LiveClass::SendData(void *rtmp){
-    printf("This is cpp file!");
+    printf("OC 调用 C++\n");
 }

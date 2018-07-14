@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NNAlgorithm.hpp"
+#import "NNAlgorithm.h"
 
 @interface ViewController ()
 
@@ -17,32 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // OC 调用 C++
-//    LiveClass::SendData(0);
     
-    /**
-     1-n 阶乘之和
-     */
+    // OC 调用 C++
+    LiveClass::SendData(0);
+    
+    NNAlgorithm *algorithm = [[NNAlgorithm alloc] init];
     
     // 1-n 阶乘之和
-    [self factorialWithNumber:10];
-}
-
-/** 1-n 阶乘之和 */
-- (void)factorialWithNumber:(NSInteger)number {
+    NSInteger factorialSum = [algorithm factorialWithNumber:10];
+    NSLog(@"1-n 阶乘之和: factorialSum = %ld", factorialSum);
     
-    //总和
-    NSInteger sum = 0;
+    // 青蛙跳台阶问题
+    NSInteger jump = [algorithm jumpFloor:10];
+    NSLog(@"青蛙跳台阶问题: jump = %ld", jump);
     
-    //阶乘值，初始化为1
-    NSInteger factorial = 1;
-    
-    for (NSInteger i = 1; i <= number; i++) {
-        factorial = factorial * i;
-        sum = (int) (sum + factorial);
-    }
-    
-    NSLog(@"1-%ld 阶乘之和-------%ld", number, sum);
+    // 青蛙变态跳台阶问题
+    NSInteger jumpII = [algorithm jumpFloorII:4];
+    NSLog(@"青蛙变态跳台阶问题: jumpII = %ld", jumpII);
 }
 
 
