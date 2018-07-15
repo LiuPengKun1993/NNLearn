@@ -7,7 +7,7 @@
 
 #### [002. NNRuntimeTest](https://github.com/liuzhongning/NNLearn/tree/master/002.%20NNRuntimeTest)
 
-练习 `runtime` 常用的几种方法, 详情请见 [NNRuntimeTest](https://github.com/liuzhongning/NNLearn/tree/master/NNRuntimeTest);
+练习 `runtime` 常用的几种方法, 详情请见 [NNRuntimeTest](https://github.com/liuzhongning/NNLearn/tree/master/002.%20NNRuntimeTest);
 
 #### [003. NNAlgorithm](https://github.com/liuzhongning/NNLearn/tree/master/003.%20NNAlgorithm)
 
