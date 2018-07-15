@@ -39,8 +39,19 @@
     // 求1+2+3+...+n
     NSInteger solution = [algorithm sum_Solution:10];
     NSLog(@"1+2+3+...+n: solution = %ld", solution);
+    
+    // 不用加减乘除做加法
+    NSInteger sum = [algorithm sumA:23 b:13];
+    NSLog(@"不用加减乘除做加法: sum = %ld", sum);
+    
+    // 圆圈中最后剩下的数
+    NSInteger lastSolution = [algorithm lastRemaining_Solution:10 m:23];
+    NSLog(@"lastSolution = %ld", lastSolution);
+    
+    // 从 1 到 n 整数中 1 出现的次数
+    NSInteger solution1 = [algorithm numberOf1Between1AndN:18];
+    NSLog(@"solution1 = %ld", solution1);
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

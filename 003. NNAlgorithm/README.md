@@ -88,5 +88,50 @@
 }
 ```
 
+- 不用加减乘除做加法
 
+> 写一个函数，求两个整数之和，要求在函数体内不得使用 +、-、*、/ 四则运算符号。
+
+a ^ b 表示没有考虑进位的情况下两数的和，(a & b) << 1 就是进位。
+
+递归会终止的原因是 (a & b) << 1 最右边会多一个 0，那么继续递归，进位最右边的 0 会慢慢增多，最后进位会变为 0，递归终止。
+
+```
+/** 不用加减乘除做加法 */
+- (NSInteger)sumA:(NSInteger)a b:(NSInteger)b {
+    return b == 0 ? a : [self sumA:(a ^ b) b:((a & b) << 1)];
+}
+```
+
+- 圆圈中最后剩下的数
+
+> 让小朋友们围成一个大圈。然后，他随机指定一个数 m，让编号为 0 的小朋友开始报数。每次喊到 m-1 的那个小朋友要出列唱首歌，然后可以在礼品箱中任意的挑选礼物，并且不再回到圈中，从他的下一个小朋友开始，继续 0...m-1 报数 .... 这样下去 .... 直到剩下最后一个小朋友，可以不用表演。
+
+约瑟夫环，圆圈长度为 n 的解可以看成长度为 n-1 的解再加上报数的长度 m。因为是圆圈，所以最后需要对 n 取余。
+
+```
+/** 圆圈中最后剩下的数 */
+- (NSInteger)lastRemaining_Solution:(NSInteger)n m:(NSInteger)m {
+    // 特殊输入的处理
+    if (n == 0)
+        return -1;
+    if (n == 1)
+        return 0;
+    return ([self lastRemaining_Solution:n-1 m:m] + m) % n;
+}
+```
+
+- 从 1 到 n 整数中 1 出现的次数
+
+```
+/** 从 1 到 n 整数中 1 出现的次数 */
+- (NSInteger)numberOf1Between1AndN:(NSInteger)n {
+    NSInteger number = 0;
+    for (NSInteger m = 1; m <= n; m *= 10) {
+        NSInteger a = n / m, b = n % m;
+        number += (a + 8) / 10 * m + (a % 10 == 1 ? b + 1 : 0);
+    }
+    return number;
+}
+```
 
