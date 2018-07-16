@@ -28,3 +28,6 @@
 #### [007. tips](https://github.com/liuzhongning/NNLearn/blob/master/007.tips.md)
 小冷易忘知识点汇总, 总结平时用到的一些小技巧;
 
+#### [008. MVVM 设计模式](https://github.com/liuzhongning/NNLearn/tree/master/008.MVVMDemo)
+MVVM 设计模式练习: 各家各法, 各马各扎, 一份代码, 不同玩法.
+
