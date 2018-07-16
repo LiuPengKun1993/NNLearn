@@ -31,3 +31,6 @@
 #### [008. MVVM 设计模式](https://github.com/liuzhongning/NNLearn/tree/master/008.MVVMDemo)
 MVVM 设计模式练习: 各家各法, 各马各扎, 一份代码, 不同玩法.
 
+#### [009. ViewController 瘦身后的 MVC](https://github.com/liuzhongning/NNLearn/tree/master/009.MVCDemo)
+ViewController 瘦身后的 MVC: 各家各法, 各马各扎, 一份代码, 不同玩法.
+
