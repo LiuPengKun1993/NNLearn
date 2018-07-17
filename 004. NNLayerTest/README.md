@@ -1,10 +1,8 @@
 ### CALayer 练习
 
-- CALayer 相对比较轻量级;
-- 弊端是 CALayer 不能添加交互事件;
+博客地址: [CALayer 及 CALayer 的 contents 系列属性](https://www.jianshu.com/p/01d3d345a41c)
 
-
-#### 主要练习了以下功能:
+#### demo 主要练习了以下功能:
 
 - 用 CALayer 代替 UIView
 ```

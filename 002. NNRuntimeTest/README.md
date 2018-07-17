@@ -1,7 +1,9 @@
 ### runtime 练习
 练习 `runtime` 常用的几种方法;
 
-主要练习了以下几个功能:
+博客地址: [iOS 开发中 runtime 常用的几种方法](https://www.jianshu.com/p/bdcb997e0d85)
+
+demo 主要练习了以下几个功能:
 
 - 更改属性值;
 
