@@ -36,6 +36,6 @@ ViewController 瘦身后的 MVC: 各家各法, 各马各扎, 一份代码, 不�
 
 
 
-#### License
+### License
 
 This repositorie is released under the under [MIT License](https://github.com/liuzhongning/NNLearn/blob/master/LICENSE)
