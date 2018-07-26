@@ -25,7 +25,7 @@
 
 `NSSortDescriptor` 排序, 很方便, 它可以设定关键字( 字典中的 `key` ), 根据对应 `key` 的 `value` 来进行排序; 另外 `NSSet` 可以过滤数组中重复的数据;
 
-#### [007. tips](https://github.com/liuzhongning/NNLearn/blob/master/007.iOS 奇技淫巧总结.md)
+#### [007. tips](https://github.com/liuzhongning/NNLearn/blob/master/007.iOS%20奇技淫巧总结.md)
 小冷易忘知识点汇总, 总结平时用到的一些小技巧;
 
 #### [008. MVVM 设计模式](https://github.com/liuzhongning/NNLearn/tree/master/008.MVVMDemo)
