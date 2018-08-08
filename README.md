@@ -41,6 +41,10 @@
 
 - 打印父类, 子类，分类的 load 方法；
 
+### [011.NN_GCDPractice](https://github.com/liuzhongning/NNLearn/tree/master/011.NN_GCDPractice)
+
+- iOS 开发多线程 GCD 的练习，10 种常用场景；
+
 # License
 
 This repositorie is released under the under [MIT License](https://github.com/liuzhongning/NNLearn/blob/master/LICENSE)
