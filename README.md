@@ -25,7 +25,7 @@
 
 - `NSSortDescriptor` 排序, 很方便, 它可以设定关键字( 字典中的 `key` ), 根据对应 `key` 的 `value` 来进行排序; 另外 `NSSet` 可以过滤数组中重复的数据;
 
-### [007. tips](https://github.com/liuzhongning/NNLearn/blob/master/007.iOS%20奇技淫巧总结.md)
+### [007. iOS 奇技淫巧总结](https://github.com/liuzhongning/NNLearn/blob/master/007.iOS%20奇技淫巧总结.md)
 
 - 小冷易忘知识点汇总, 总结平时用到的一些小技巧;
 
@@ -43,11 +43,11 @@
 
 ### [011.NN_GCDPractice](https://github.com/liuzhongning/NNLearn/tree/master/011.NN_GCDPractice)
 
-- iOS 开发多线程 GCD 的练习，10 种常用场景；
+- iOS 开发多线程 GCD 练习，10 种常用场景；
 
 ### [012.NN_ NSOperationPractice](https://github.com/liuzhongning/NNLearn/tree/master/012.NN_NSOperationPractice)
 
-- iOS开发之多线程 NSOperation 练习，几种常用场景；
+- iOS开发多线程 NSOperation 练习，几种常用场景；
 
 
 # License
