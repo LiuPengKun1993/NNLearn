@@ -45,9 +45,13 @@
 
 - iOS 开发多线程 GCD 练习，10 种常用场景；
 
-### [012.NN_ NSOperationPractice](https://github.com/liuzhongning/NNLearn/tree/master/012.NN_NSOperationPractice)
+### [012.NN_NSOperationPractice](https://github.com/liuzhongning/NNLearn/tree/master/012.NN_NSOperationPractice)
 
 - iOS开发多线程 NSOperation 练习，几种常用场景；
+
+### [013.NN_NSThreadPractice](https://github.com/liuzhongning/NNLearn/tree/master/013.NN_NSThreadPractice)
+
+- iOS开发多线程 NSThread 练习，几种常用场景；
 
 
 # License
