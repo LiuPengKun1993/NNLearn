@@ -100,3 +100,23 @@ return nil;
 }
 
 ```
+
+- 监听界面滚动，淡入淡出更改电池条颜色
+
+```
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    if (self.collectionView.contentOffset.y <= -200) {
+        return UIStatusBarStyleLightContent;
+    }
+    return UIStatusBarStyleDefault;
+}
+
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation {
+    return UIStatusBarAnimationFade;
+}
+
+```
