@@ -53,6 +53,11 @@
 
 - iOS开发多线程 NSThread 练习，几种常用场景；
 
+### [014.NN_UIViewAnimationPractice](https://github.com/liuzhongning/NNLearn/tree/master/014.NN_UIViewAnimationPractice)
+
+- iOS 动画, UIView Animation, 详细介绍请移步这里 [iOS 动画 - UIView Animation](https://www.jianshu.com/p/b1fc88c65be1) ;
+
+
 
 # License
 
