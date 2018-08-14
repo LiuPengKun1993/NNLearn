@@ -120,3 +120,21 @@ return nil;
 }
 
 ```
+
+- 判断控件是不是指定视图的子视图
+
+```
+BOOL isView = [textView isDescendantOfView:self.view];
+```
+
+- 修改 UITextField 中 Placeholder 的文字颜色
+
+```
+[textField setValue:[UIColor redColor] forKeyPath:@"_placeholderLabel.textColor"];
+```
+
+- 防止 UIScrollView 手势覆盖侧滑手势
+
+```
+[scrollView.panGestureRecognizer requireGestureRecognizerToFail:self.navigationController.interactivePopGestureRecognizer];
+```
