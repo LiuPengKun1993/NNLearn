@@ -138,3 +138,20 @@ BOOL isView = [textView isDescendantOfView:self.view];
 ```
 [scrollView.panGestureRecognizer requireGestureRecognizerToFail:self.navigationController.interactivePopGestureRecognizer];
 ```
+
+- Masonry 一次性设置多个水平或垂直排列的控件
+
+
+```
+NSMutableArray *masonryLabelArray = [NSMutableArray array];
+[masonryNumberLabelArray addObject:learningLabel];
+[masonryNumberLabelArray addObject:rankLabel];
+[masonryNumberLabelArray addObject:timeLabel];
+
+[masonryLabelArray mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:20 leadSpacing:10 tailSpacing:10];
+
+[masonryNumberLabelArray mas_makeConstraints:^(MASConstraintMaker *make) {
+make.top.mas_equalTo(100);
+make.height.mas_equalTo(30);
+}];
+```
