@@ -57,6 +57,9 @@
 
 - iOS 动画, UIView Animation, 详细介绍请移步这里 [iOS 动画 - UIView Animation](https://www.jianshu.com/p/b1fc88c65be1) ;
 
+### [015.NNMultipleDelegate](https://github.com/liuzhongning/NNLearn/tree/master/015.NNMultipleDelegate)
+
+- 利用OC的消息转发机制实现多重代理
 
 
 # License
