@@ -53,14 +53,13 @@
 
 - iOS开发多线程 NSThread 练习，几种常用场景；
 
-### [014.NN_UIViewAnimationPractice](https://github.com/liuzhongning/NNLearn/tree/master/014.NN_UIViewAnimationPractice)
-
-- iOS 动画, UIView Animation；
-
-### [015.NNMultipleDelegate](https://github.com/liuzhongning/NNLearn/tree/master/015.NNMultipleDelegate)
+### [014.NNMultipleDelegate](https://github.com/liuzhongning/NNLearn/tree/master/014.NNMultipleDelegate)
 
 - 利用OC的消息转发机制实现多重代理；
 
+### [015.NN_UIViewAnimationPractice](https://github.com/liuzhongning/NNLearn/tree/master/015.NN_UIViewAnimationPractice)
+
+- iOS 动画, UIView Animation；
 
 ### [016.NNCoreAnimation](https://github.com/liuzhongning/NNLearn/tree/master/016.NNCoreAnimation)
 
