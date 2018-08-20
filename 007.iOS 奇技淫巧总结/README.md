@@ -155,3 +155,35 @@ make.top.mas_equalTo(100);
 make.height.mas_equalTo(30);
 }];
 ```
+
+- 点击 tabBarItem 时，有动画缩放效果(还可以在代理方法里面加通知，这样当双击当前 tabBarItem 时，可以让当前界面刷新，市场上很多 APP 都有这样的功能)；
+```
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    NSInteger integet = [self.tabBar.items indexOfObject:viewController.tabBarItem];
+    [self addAnimationWithIndex:integet];
+    return YES;
+}
+
+- (void)addAnimationWithIndex:(NSInteger)index {
+    NSMutableArray *tabbarbuttonArray = [NSMutableArray array];
+        for (UIView *tabBarButton in self.tabBar.subviews) {
+            if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [tabbarbuttonArray addObject:tabBarButton];
+            }
+        }
+    [NNAnimation addAnimationWithCALayer:[tabbarbuttonArray[index] layer] interval:0.1 repeatCount:2 fromValue:0.95 toValue:1.05];
+}
+
+/** 缩放动画 */
++ (void)addAnimationWithCALayer:(CALayer *)layer interval:(CFTimeInterval)interval repeatCount:(NSInteger)repeatCount fromValue:(CGFloat)fromValue toValue:(CGFloat)toValue {
+    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    scaleAnimation.fromValue = [NSNumber numberWithFloat:fromValue];
+    scaleAnimation.toValue = [NSNumber numberWithFloat:toValue];
+    scaleAnimation.duration = interval;
+    scaleAnimation.repeatCount = repeatCount;
+    scaleAnimation.autoreverses = YES;
+    scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [layer addAnimation:scaleAnimation forKey:nil];
+}
+
+```
