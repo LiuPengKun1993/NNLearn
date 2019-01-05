@@ -65,6 +65,13 @@
 
 - iOS 动画 - 核心动画；
 
+### [017.NN_UIViewAnimationPractice_swift](https://github.com/liuzhongning/NNLearn/tree/master/017.NN_UIViewAnimationPractice_swift)
+
+- iOS 动画, UIView Animation，swift 语言；
+
+### [018.NNCoreAnimation_swift](https://github.com/liuzhongning/NNLearn/tree/master/018.NNCoreAnimation_swift)
+
+- iOS 动画 - 核心动画，swift 语言；
 
 # License
 
