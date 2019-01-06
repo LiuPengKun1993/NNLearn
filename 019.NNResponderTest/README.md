@@ -1,6 +1,6 @@
 ## view 事件传递，用 UIResponder 替代代理与block，传递事件更方便；
 
-- 核心代码，在 UIResponder 的分类 UIResponder+responder.h 中：
+- 核心代码，在 UIResponder 的分类 UIResponder+responder 中：
 
 
 ```
