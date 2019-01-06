@@ -73,6 +73,10 @@
 
 - iOS 动画 - 核心动画，swift 语言；
 
+### [019.NNResponderTest](https://github.com/liuzhongning/NNLearn/tree/master/019.NNResponderTest)
+
+- view 事件传递，用 UIResponder 替代代理与 block，传递事件更方便；
+
 # License
 
 This repositorie is released under the under [MIT License](https://github.com/liuzhongning/NNLearn/blob/master/LICENSE)
