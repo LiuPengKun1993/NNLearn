@@ -1,7 +1,7 @@
 
 ### OC Swift 混编
 
-#### 设置: target-->build setting -->Packaging -->Defines Module 改为 “Yes”；
+#### 设置: target-->build setting -->Packaging -->Defines Module 改为 “YES”；
 
 - Swift 调用 OC 
 
