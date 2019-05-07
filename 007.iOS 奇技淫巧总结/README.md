@@ -253,3 +253,31 @@ BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
     return centerCell;
 }
 ```
+
+- 数组去重
+
+1. 利用 NSSet 的特性，NSSet 是无序、没有重复元素的数组，如果需要排序，可以考虑用 NSSortDescriptor
+```
+    NSArray *oldArray = @[@"12", @"12", @"32", @"1", @"23", @"43", @"21"];
+    NSSet *set = [NSSet setWithArray:oldArray];
+    NSArray *newArray = [set allObjects];
+    NSLog(@"%@", newArray);
+```
+
+2. 通过KVC，利用私有API，去重只需一行代码
+```
+    NSArray *oldArray = @[@"12", @"12", @"32", @"1", @"23", @"43", @"21"];
+    NSArray *newArray = [oldArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
+    NSLog(@"%@", newArray);
+```
+
+3. 利用字典 key-value 的特性（key不能重复），将数组中的元素存入字典
+```
+    NSArray *oldArray = @[@"12", @"12", @"32", @"1", @"23", @"43", @"21"];
+    NSMutableDictionary *tempDict = [NSMutableDictionary dictionary];
+    for (NSString *tempString in oldArray) {
+        [tempDict setObject:tempString forKey:tempString];
+    }
+    NSArray *newArray = [tempDict allValues];
+    NSLog(@"%@", newArray);
+```
