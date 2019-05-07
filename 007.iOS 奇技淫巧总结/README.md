@@ -208,3 +208,48 @@ BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
 [self.navigationController setNavigationBarHidden:isShowHomePage animated:YES];
 }
 ```
+
+- 获取列表中当前屏幕显示的最中间的cell
+
+```
+/** 减速停止的时候开始执行 */
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self scrollViewEndScroll:scrollView];
+}
+
+/** 停止拖拽的时候开始执行 */
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (!decelerate) {
+        [self scrollViewEndScroll:scrollView];
+    }
+}
+
+- (void)scrollViewEndScroll:(UIScrollView *)scrollView {
+    UITableViewCell *centerCell = [self getCenterCell];
+    if (centerCell) {
+        NSIndexPath *indexPath = [self indexPathForCell:centerCell];
+        [self scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+    }
+}
+
+/** 获取最中间的cell */
+- (UITableViewCell *)getCenterCell {
+    CGFloat minDelta = CGFLOAT_MAX;
+    // 屏幕中央位置
+    CGFloat screenCenterY = SCREEN_HEIGHT * 0.5;
+    NSArray *cellArray = [self visibleCells];
+    UITableViewCell *centerCell = nil;
+    for (UITableViewCell *cell in cellArray) {
+        // 获取当前 cell 的居中点坐标
+        CGPoint cellCenterPoint = CGPointMake(cell.frame.origin.x, cell.frame.size.height * 0.5 + cell.frame.origin.y);
+        // 转换当前的 cell 的坐标
+        CGPoint coorPoint = [cell.superview convertPoint:cellCenterPoint toView:nil];
+        CGFloat deltaTemp = fabs(coorPoint.y - screenCenterY);
+        if (deltaTemp < minDelta) {
+            centerCell = cell;
+            minDelta = deltaTemp;
+        }
+    }
+    return centerCell;
+}
+```
