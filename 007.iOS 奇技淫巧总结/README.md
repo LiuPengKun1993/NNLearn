@@ -281,3 +281,17 @@ BOOL isShowHomePage = [viewController isKindOfClass:[self class]];
     NSArray *newArray = [tempDict allValues];
     NSLog(@"%@", newArray);
 ```
+
+- 利用 KVC 获取数组里的：最大、最小、平均、求和
+
+```
+    NSArray *array = @[@"12", @"23", @2, @5.2, @"4.2", @"0"];
+    NSNumber *sum = [array valueForKeyPath:@"@sum.floatValue"];
+    NSNumber *avg = [array valueForKeyPath:@"@avg.floatValue"];
+    NSNumber *max = [array valueForKeyPath:@"@max.floatValue"];
+    NSNumber *min = [array valueForKeyPath:@"@min.floatValue"];
+    NSLog(@"sum = %@", sum);
+    NSLog(@"avg = %@", avg);
+    NSLog(@"max = %@", max);
+    NSLog(@"min = %@", min);
+```
