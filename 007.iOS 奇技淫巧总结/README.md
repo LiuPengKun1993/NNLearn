@@ -101,24 +101,16 @@ return nil;
 
 ```
 
-- 监听界面滚动，淡入淡出更改电池条颜色
+
+- 修改状态栏(电池条)背景色
 
 ```
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self setNeedsStatusBarAppearanceUpdate];
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    if (self.collectionView.contentOffset.y <= -200) {
-        return UIStatusBarStyleLightContent;
+- (void)setStatusBarBackgroundColor:(UIColor *)color {
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
+        statusBar.backgroundColor = color;
     }
-    return UIStatusBarStyleDefault;
 }
-
-- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation {
-    return UIStatusBarAnimationFade;
-}
-
 ```
 
 - 判断控件是不是指定视图的子视图
