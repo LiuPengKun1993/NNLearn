@@ -37,6 +37,7 @@
             break;
         }
     }
+    free(ivar);
     self.testLabelText = _person.name.length ? _person.name : @"更改属性值失败";
 }
 

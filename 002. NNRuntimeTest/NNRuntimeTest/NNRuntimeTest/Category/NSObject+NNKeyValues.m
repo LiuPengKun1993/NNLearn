@@ -64,6 +64,7 @@
             [objc setValue:value forKey:key];
         }
     }
+    free(ivarList);
     return objc;
 }
 

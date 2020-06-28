@@ -46,6 +46,7 @@
             // 利用 KVC 对属性赋值
             [self setValue:value forKey:key];
         }
+        free(ivars);
     }
     return self;
 }
